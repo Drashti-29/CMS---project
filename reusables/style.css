@@ -1,0 +1,113 @@
+/* Custom CSS for Product Cards */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1.display-2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
+    color: #343a40;
+    font-weight: bold;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .card-footer {
+    background-color: transparent;
+    border-top: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design for cards */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  /* Custom Navbar CSS */
+.navbar {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-brand:hover {
+    color: #d1e8ff;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    background-color: #0056b3;
+    color: #d1e8ff;
+    border-radius: 8px;
+  }
+  
+  .nav-item {
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-item {
+      margin: 5px 0;
+    }
+  }
+  
