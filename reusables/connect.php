@@ -1,9 +1,9 @@
 <?php
   $connect = mysqli_connect(
-    'sql111.infinityfree.com', 
-    'if0_37528306', 
-    'Drashti2911', //write your password
-    'if0_37528306_http5225' // write your database name
+    'localhost', 
+    'root', 
+    'root', //write your password
+    'products' // write your database name
   );
 
   if(!$connect){

@@ -12,6 +12,25 @@
         <li class="nav-item">
           <a class="nav-link" href="add.php">Add Product</a>
         </li>
+        <li class="nav-item">
+        <?php 
+        include('reusables/functions.php');
+        if (!isset($_SESSION['admin'])) {
+          echo 
+          '<form method="GET" action="login.php" >
+              <input type="hidden">
+              <button class="btn btn-sm btn-primary nav-link">Login</button>
+          </form>
+        </li>';
+        } else {
+          echo
+          '<form method="GET" action="logout.php" >
+              <input type="hidden">
+              <button class="btn btn-sm btn-primary nav-link">Logout</button>
+          </form>';
+        };
+        ?>
+        </li>
       </ul>
     </div>
   </div>
