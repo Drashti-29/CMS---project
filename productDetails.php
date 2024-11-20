@@ -52,7 +52,7 @@
     <div class="row">
     </div>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
             <div class="mb-3">
             <h3>Product Name:</h3>
                 <?php echo '<p>' . $result['productName'] . '</p>'; ?>
@@ -74,12 +74,14 @@
                 <?php echo '<p>$' . $result['buyPrice'] . '</p>'; ?>
             </div>
         </div>
-        <div class="col">
-            <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="
-            <?php 
-                echo $result['productName']
-            ?>
-            " width="500" height="600">
+        <div class="col-md-6">
+          <?php
+            if (!$result['image'] == null) {
+              echo '<img src="' . $result['image'] . ' alt=' . $result['productName'] . ' height="500" width="600" />';
+            } else {
+              echo '<img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="' . $result['productName'] . 'height="500" width="600" />';
+            }
+          ?>
         </div>
     </div>
 </body>
