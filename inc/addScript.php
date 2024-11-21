@@ -1,6 +1,6 @@
 <?php
 // Check if the form was submitted
-if (isset($_POST['add'])) {
+if (isset($_POST['addProduct'])) {
     // Retrieve form data
     $productCode = $_POST['productCode'];
     $productName = $_POST['productName'];
