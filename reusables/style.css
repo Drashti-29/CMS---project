@@ -3,11 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Genos:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Custom CSS for Product Cards */
-
 body {
-    background-color: #a8a8a8;
-    font-family: "Outfit", sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1515281239448-2abe329fe5e5') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
   
 
   .container-fluid {
@@ -19,15 +33,6 @@ body {
     margin: 8px;
     font-family: "Outfit", sans-serif;
     font-style: italic;
-  }
-
-  .hero {
-    display: flex;
-    background-color: #8ea7c2;
-    justify-content: center;
-    align-items: center;
-    font-family: "Genos", sans-serif;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   }
   
   h1.display-2 {
@@ -70,14 +75,6 @@ body {
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-title {
-    margin-bottom: 10px;
-    font-family: "Genos", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #154271;
   }
   
   .card-text {
