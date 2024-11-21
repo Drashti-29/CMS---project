@@ -1,7 +1,31 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Genos:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Custom CSS for Product Cards */
 body {
-    background-color: #f4f4f9;
-    font-family: 'Arial', sans-serif;
+    background-color: #a8a8a8;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .container-fluid {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .navbar-brand {
+    margin: 8px;
+    font-family: "Outfit", sans-serif;
+    font-style: italic;
+  }
+
+  .hero {
+    display: flex;
+    background-color: #8ea7c2;
+    justify-content: center;
+    align-items: center;
+    font-family: "Genos", sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   }
   
   h1.display-2 {
@@ -11,28 +35,56 @@ body {
     color: #343a40;
     font-weight: bold;
   }
-  
-  .card {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+
+  h1.display-3, .lead {
+    font-style: italic;
+    text-align: center;
+  }
+
+  h1.display-3 {
+    font-weight: 500;
+    color: #494949;
+    font-size: 3rem;
   }
   
-  /* .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  } */
+  .card {
+    height: 100%;
+    background-color: #8ea7c2;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-container {
+    margin-bottom: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
   
   .card-title {
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Genos", sans-serif;
+    font-size: 2rem;
     font-weight: bold;
-    color: #007bff;
+    color: #154271;
   }
   
   .card-text {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 1rem;
-    color: #6c757d;
+    font-style: italic;
+    line-height: 1.5;
+    color: #494949;
   }
   
   .card-footer {
