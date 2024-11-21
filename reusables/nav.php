@@ -4,10 +4,10 @@
         include('reusables/functions.php');
         if (!isset($_SESSION['admin'])) {
           echo 
-          '<a class="navbar-brand" href="#">Vehicle Showroom</a>';
+          '<a class="navbar-brand" href="index.php">Vehicle Showroom</a>';
         } else {
           echo
-          '<a class="navbar-brand" href="#">Admin</a>';
+          '<a class="navbar-brand" href="index.php">Admin</a>';
         };
       ?>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link" aria-current="page" href="index.php">Product Lines</a>
         </li>
         <?php 
         if (isset($_SESSION['admin'])) {

@@ -33,7 +33,7 @@
     echo '<div class= "row">';
     foreach($products as $product){
       echo 
-      '<div class="col-md-4">
+      '<div class="col-md-4 mb-2">
         <div class="card mb-2">
           <div class="card-body">
               <h5 class="card-title">' . $product['productName'] . '</h5>
@@ -72,7 +72,7 @@
                             <form method="GET" action="productDetails.php">
                               <input type="hidden" name="productCode" value="' . $product['productCode'] . '">
                               <input type="hidden" name="productLine" value="' . $product['productLine'] . '">
-                              <button class="btn btn-sm btn-primary">View</button>
+                              <button class="btn btn-sm btn-primary">Details</button>
                             </form>
                         </div>
                 </div>

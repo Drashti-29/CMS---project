@@ -29,19 +29,20 @@
     </div>
   </div>
   <?php 
-        echo "<script>console.log('PHP says: $productLine');</script>";
-        ?>
+    echo "<script>console.log('PHP says: $productLine');</script>";
+  ?>
   <div class="container">
     <div class="row">
-        <?php echo '<div class="row">
-                                <div class="col">        
-                                    <form method="GET" action="getProduct.php">
-                                    <input type="hidden" name="productCode" value="' . $result['productCode'] . '">
-                                    <input type="hidden" name="productLine" value="' . $result['productLine'] . '">
-                                    <button class="btn btn-sm btn-primary">Back</button>
-                                    </form>
-                                </div>
-                            </div>'
+        <?php echo 
+        '<div class="row">
+              <div class="col">        
+                  <form method="GET" action="getProduct.php">
+                  <input type="hidden" name="productCode" value="' . $result['productCode'] . '">
+                  <input type="hidden" name="productLine" value="' . $result['productLine'] . '">
+                  <button class="btn btn-sm btn-primary">Back</button>
+                  </form>
+              </div>
+          </div>'
         ?>
     </div>
     <div class="row">

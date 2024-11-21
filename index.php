@@ -20,17 +20,21 @@
   <!-- Hero Section -->
    <div class="hero mb-4">
     <h1 class="display-4">Explore Our Collection of Vehicles</h1>
-   </div>
+   </div> 
 
   <!-- Product Lines -->
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <h1 class="display-3">Product Lines</h1>
-        <p class="lead">Explore a wide variety of vehicles to suit your needs.</p>
+        <p class="lead">Explore a wide variety of vehicle models to suit your needs.</p>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- above fold picture -->
+    <div class="row mb-3">
+      <img src="https://images.unsplash.com/photo-1515281239448-2abe329fe5e5?q=80&w=1193&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="wall of model cars" >
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="cats">
       <?php 
         require('reusables/connect.php');
         $query = 'SELECT * FROM productlines';

@@ -1,6 +1,6 @@
 <?php
   $connect = mysqli_connect(
-    'localhost:8889', 
+    'localhost:3306', 
     'root', 
     'root', //write your password
     'products' // write your database name
