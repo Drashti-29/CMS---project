@@ -1,9 +1,9 @@
 <?php
   $connect = mysqli_connect(
-    'localhost', 
+    'localhost:8889',
     'root', 
     'root', //write your password
-    'http5225' // write your database name
+    'products' // write your database name
   );
 
   if(!$connect){
