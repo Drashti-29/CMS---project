@@ -4,8 +4,8 @@ A simple and responsive web application for managing a vehicle showroom, where u
 
 ## Live Demo
 
-You can view the live demo of the Vehicle Showroom project here:  
-[Explore Collection of Vehicles Website]([http://codewithdrashti.rf.gd/index.php](http://codewithdrashti.rf.gd/index.php)
+You can view the live demo of the Vehicle Showroom project here:
+[Explore Collection of Vehicle Website](http://codewithdrashti.rf.gd/index.php)
 
 ## Features
 
