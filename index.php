@@ -7,6 +7,16 @@
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="reusables/style.css">
+  <style>
+  body {
+    background-image: url('imgs/download.gif'); /* Replace with your GIF's URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+  }
+</style>
 </head>
 <body>
   <div class="container-fluid">
@@ -25,12 +35,8 @@
 
   <!-- Product Lines -->
   <div class="container">
-    <div class="row mb-4">
-      <div class="col-md-12">
-        <h2 class="text-center">Product Lines</h2>
-        <p class="text-muted text-center">Select a category to explore available models.</p>
-      </div>
-    </div>
+
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <?php 
         require('reusables/connect.php');

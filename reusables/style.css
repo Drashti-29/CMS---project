@@ -38,6 +38,46 @@ p.lead {
     font-family: "Outfit", sans-serif;
     font-style: italic;
   }
+
+  h1 {
+    font-size: 3rem; 
+    font-weight: 700; 
+    text-align: center; 
+    color: #007bff; 
+    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.3); 
+    letter-spacing: 2px;
+    margin-top: 2rem; 
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60%; 
+    height: 4px; 
+    background: linear-gradient(90deg, #007bff, #0056b3); 
+    border-radius: 2px;
+    z-index: -1; 
+}
+
+
+h1:hover {
+    color: #0056b3; 
+    text-shadow: 4px 4px 8px rgba(0, 123, 255, 0.5); 
+    transition: all 0.3s ease; 
+}
+
+h1:hover::after {
+    width: 80%;
+    transition: width 0.3s ease; 
+}
+
   
   h1.display-2 {
     text-align: center;
@@ -59,46 +99,51 @@ p.lead {
   }
   
   .card {
-    height: 100%;
-    background-color: #80afe0;
-    border: none;
-    border-radius: 12px;
+    background: #ffffff; /* White card background */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden; /* Ensure content stays inside */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .card:hover {
-    background-color: #a5c3e3;
-  }
-
-  .card-body {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card-container {
-    margin-bottom: 20px;
+    flex-direction: column; /* Stack items vertically */
   }
   
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 
+                0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Makes all card bodies take equal space */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content evenly */
+    height: 250px; /* Ensures all cards have the same height */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #1e90ff; /* Blue text color */
+    margin-bottom: 10px;
   }
   
   .card-text {
-    margin-top: 0;
-    margin-bottom: 20px;
     font-size: 1rem;
-    font-style: italic;
-    line-height: 1.5;
-    color: #1f1f1f;
+    color: #555555; /* Neutral text color */
   }
   
   .card-footer {
-    background-color: transparent;
-    border-top: none;
+    padding: 15px;
+    background: linear-gradient(90deg, #1e90ff, #00bfff); /* Gradient footer */
+    color: #ffffff; /* White footer text */
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
   button {
     background-color: #007bff;
     color: white;
