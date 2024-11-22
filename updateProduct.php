@@ -40,6 +40,7 @@ echo "<script>console.log('PHP says: $productLine');</script>";
     <div class="row">
       <div class="col-md-5">
       <form method="POST" action="inc/updateScript.php">
+        <input type="hidden" name="productCode" value = "<?php echo $productCode ?>">
         <div class="mb-3">
           <label for="productName" class="form-label">Product Name</label>
           <input type="text" class="form-control" id="productName" name="productName"
