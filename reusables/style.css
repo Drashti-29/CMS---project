@@ -9,10 +9,14 @@ body {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1515281239448-2abe329fe5e5') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)) , url('https://images.unsplash.com/photo-1515281239448-2abe329fe5e5') center/cover no-repeat;
   color: #fff;
   padding: 100px 0;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p.lead {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
@@ -56,10 +60,14 @@ body {
   
   .card {
     height: 100%;
-    background-color: #8ea7c2;
+    background-color: #80afe0;
     border: none;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    background-color: #a5c3e3;
   }
 
   .card-body {
@@ -83,7 +91,7 @@ body {
     font-size: 1rem;
     font-style: italic;
     line-height: 1.5;
-    color: #494949;
+    color: #1f1f1f;
   }
   
   .card-footer {
