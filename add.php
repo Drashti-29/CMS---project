@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="reusables/style.css">
     <style>
   body {
-    background-image: url('imgs/GT6-Vision-GT-header-GIF.gif'); /* Replace with your GIF's URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,47 +18,43 @@
   }
   /* Form container styling */
 .container {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    background: #ffff; /* Semi-transparent dark background */
     border-radius: 15px; /* Rounded corners */
     padding: 30px; /* Space inside the form */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     max-width: 600px; /* Limit form width for readability */
     margin: 50px auto; /* Center the form */
-    color: #fff; /* White text for contrast */
+    color: #0000; /* White text for contrast */
 }
 #productCodeHelp {
-    color: #fff; /* Change text color to white */
+    color: #0000; /* Change text color to white */
 }
 
 /* Input fields styling */
 .form-control {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-    color: #fff; /* White text */
+    background: #ffff;
+    border: 1px solid #d1d1d0; /* Subtle border */
+    color: #0000; /* White text */
     border-radius: 8px; /* Rounded corners */
     padding: 10px; /* Space inside fields */
 }
 
 .form-control:focus {
-    background: rgba(255, 255, 255, 0.3); /* Highlight on focus */
+    background: #ffff; /* Highlight on focus */
     outline: none; /* Remove default focus outline */
-    border-color: #ffc107; /* Highlight border */
-    box-shadow: 0 0 10px #ffc107; /* Glow effect */
+    border-color: #dadada; /* Highlight border */
+    box-shadow: 0 0 10px #007bff; /* Glow effect */
 }
 
 /* Labels and help text */
 .form-label {
     font-weight: bold;
-    color: #ffc107; /* Golden text for labels */
-}
-
-.form-text {
-    color: #ddd; /* Muted text for help messages */
+    color: #007bff; /* Golden text for labels */
 }
 
 /* Submit button styling */
 .btn-primary {
-    background: #ffc107; /* Golden button */
+    background: #007bff; /* Golden button */
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -69,7 +64,7 @@
 }
 
 .btn-primary:hover {
-    background: #ffae00; /* Slightly darker gold on hover */
+    background: #007bff; /* Slightly darker gold on hover */
     color: #000; /* Contrast text on hover */
     box-shadow: 0 0 15px rgba(255, 175, 0, 0.7); /* Glow effect */
 }
@@ -110,7 +105,6 @@
         </div>
         <div class="mb-3">
             <label for="productLine" class="form-label">Product Line</label>
-            <!-- <input type="text" class="form-control" id="productLine" name="productLine" required> -->
             <select class="form-control" name="productLine" id="productLine" required>
                 <option value="">Please Choose a Product Line from the list below.</option>
                 <?php
