@@ -6,8 +6,86 @@
     <title>Add Product</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="reusables/css/styles.css">
+    <!-- <link rel="stylesheet" href="reusables/css/styles.css"> -->
     <link rel="stylesheet" href="reusables/style.css">
+    <style>
+  body {
+    background-image: url('imgs/GT6-Vision-GT-header-GIF.gif'); /* Replace with your GIF's URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+  }
+  /* Form container styling */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Space inside the form */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 600px; /* Limit form width for readability */
+    margin: 50px auto; /* Center the form */
+    color: #fff; /* White text for contrast */
+}
+#productCodeHelp {
+    color: #fff; /* Change text color to white */
+}
+
+/* Input fields styling */
+.form-control {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Space inside fields */
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.3); /* Highlight on focus */
+    outline: none; /* Remove default focus outline */
+    border-color: #ffc107; /* Highlight border */
+    box-shadow: 0 0 10px #ffc107; /* Glow effect */
+}
+
+/* Labels and help text */
+.form-label {
+    font-weight: bold;
+    color: #ffc107; /* Golden text for labels */
+}
+
+.form-text {
+    color: #ddd; /* Muted text for help messages */
+}
+
+/* Submit button styling */
+.btn-primary {
+    background: #ffc107; /* Golden button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ffae00; /* Slightly darker gold on hover */
+    color: #000; /* Contrast text on hover */
+    box-shadow: 0 0 15px rgba(255, 175, 0, 0.7); /* Glow effect */
+}
+
+/* General alignment for small screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-label, .btn-primary {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+}
+
+</style>
 </head>
 <body>
     <div class="container-fluid">
