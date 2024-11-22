@@ -2,7 +2,7 @@
 // Check if the form was submitted
 if (isset($_POST['updateScript'])) {
     // Retrieve form data and the productCode from the URL query parameter
-    $productCode = $_GET['productCode']; // Assuming productCode is passed in the URL
+    $productCode = $_POST['productCode']; // Assuming productCode is passed in the URL
     $productLine = $_POST['productLine'];
     $productName = $_POST['productName'];
     $productVendor = $_POST['productVendor'];
@@ -27,8 +27,10 @@ if (isset($_POST['updateScript'])) {
     // Prepare the SQL UPDATE query
     $query = "UPDATE `products` 
               SET 
+                `productCode` = '" . mysqli_real_escape_string($connect, $productCode) . "',
                 `productName` = '" . mysqli_real_escape_string($connect, $productName) . "',
                 `productVendor` = '" . mysqli_real_escape_string($connect, $productVendor) . "',
+                `productLine` = '" . mysqli_real_escape_string($connect, $productLine) . "',
                 `quantityInStock` = '" . mysqli_real_escape_string($connect, $quantityInStock) . "',
                 `buyPrice` = '" . mysqli_real_escape_string($connect, $buyPrice) . "',
                 `MSRP` = '" . mysqli_real_escape_string($connect, $MSRP) . "' 
@@ -43,8 +45,9 @@ if (isset($_POST['updateScript'])) {
     // Check if the query was successful
     if ($result) {
         // Debugging: Output the retrieved values
-        
-      echo "<script>console.log('Product Code: $productCode');</script>";
+        // echo $query;
+        // echo $result;
+        echo "<script>console.log('Product Code: $productCode');</script>";
         header("Location: ../getProduct.php?productLine=$productLine");
         exit;
     } else {
