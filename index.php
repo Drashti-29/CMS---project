@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="reusables/style.css">
   <style>
   body {
-    background-image: url('imgs/download.gif'); /* Replace with your GIF's URL */
+    background-image: url('imgs/GT6-Vision-GT-header-GIF.gif'); /* Replace with your GIF's URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
